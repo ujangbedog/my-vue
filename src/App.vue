@@ -2,11 +2,7 @@
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
-<<<<<<< HEAD
-    <router-link to="/dev">Dev</router-link>
-=======
     <router-link to="/tugas/1">Tugas 1</router-link>
->>>>>>> tugas_1
   </nav>
   <router-view/>
 </template>
