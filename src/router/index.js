@@ -3,8 +3,9 @@ import HomeView from '../views/HomeView.vue'
 import Tugas1View from '../views/Tugas1/Tugas1View.vue'
 
 import Tugas2View from '../views/Tugas2/Tugas2View.vue'
-import BeforeCreateView from '../views/Tugas2/BeforeCreateView.vue'
-import AfterCreateView from '../views/Tugas2/AfterCreateView.vue'
+import SetupView from '../views/Tugas2/SetupView.vue'
+import BeforeMountView from '../views/Tugas2/BeforeMountView.vue'
+import OnMountedView from '../views/Tugas2/OnMountedView.vue'
 
 const routes = [
   {
@@ -31,16 +32,20 @@ const routes = [
     component: Tugas2View
   },
   {
-    path: '/tugas/2/before-create',
-    name: 'beforecreate',
-    component: BeforeCreateView
+    path: '/tugas/2/before-create-and-created',
+    name: 'beforeandafter',
+    component: SetupView
   },
   {
-    path: '/tugas/2/after-create',
-    name: 'aftercreate',
-    component: AfterCreateView
+    path: '/tugas/2/before-mount',
+    name: 'beforecreate',
+    component: BeforeMountView
   },
-  
+  {
+    path: '/tugas/2/mounted',
+    name: 'mounted',
+    component: OnMountedView
+  },
 ]
 
 const router = createRouter({
