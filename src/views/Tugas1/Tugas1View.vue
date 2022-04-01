@@ -12,7 +12,7 @@
 
 <script>
 // @ is an alias to /src
-import TugasSatu from '@/components/TugasSatu.vue'
+import TugasSatu from '@/components/Tugas1/TugasSatu.vue'
 
 export default {
   name: 'Tugas1View',

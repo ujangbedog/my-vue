@@ -2,7 +2,8 @@
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
-    <router-link to="/tugas/1">Tugas 1</router-link>
+    <router-link to="/tugas/1">Tugas 1</router-link> |
+    <router-link to="/tugas/2">Tugas 2</router-link>
   </nav>
   <router-view/>
 </template>
@@ -26,6 +27,20 @@ nav a {
 }
 
 nav a.router-link-exact-active {
+  color: #42b983;
+}
+subnav {
+  padding: 30px;
+}
+
+subnav a {
+  font-size: 80%;
+  font-weight: bold;
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+subnav a.router-link-exact-active {
   color: #42b983;
 }
 </style>

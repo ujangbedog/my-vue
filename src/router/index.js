@@ -1,6 +1,9 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import Tugas1View from '../views/Tugas1View.vue'
+import Tugas1View from '../views/Tugas1/Tugas1View.vue'
+
+import Tugas2View from '../views/Tugas2/Tugas2View.vue'
+import BeforeCreateView from '../views/Tugas2/BeforeCreateView.vue'
 
 const routes = [
   {
@@ -21,6 +24,17 @@ const routes = [
     name: 'tugas1',
     component: Tugas1View
   },
+  {
+    path: '/tugas/2',
+    name: 'tugas2',
+    component: Tugas2View
+  },
+  {
+    path: '/tugas/2/before-create',
+    name: 'before-create',
+    component: BeforeCreateView
+  },
+  
 ]
 
 const router = createRouter({
