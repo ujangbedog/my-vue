@@ -1,25 +1,24 @@
 <template>
   <div class="tugasdua">
-      <subnav>
-        <router-link to="/tugas/2/before-create">Before Create</router-link> |
-        <router-link to="/tugas/2/created">Created</router-link> |
-      </subnav>
+       <div id="subnav">
+         <router-link to="/tugas/2/before-create">Before Create</router-link> |
+         <router-link to="/tugas/2/after-create">Created</router-link> |
+       </div>
     <h1>{{ msg }}</h1>
   </div>
 </template>
 
 <script>
+import { ref } from "vue";
 export default {
-  data() {
-    return {
-      msg: "Before Create",
-    };
-  },
-  beforeCreate() {
-    console.log("Value of val is: " + this.msg);
-  },
-//   created() {
-//     console.log("Value of val is: " + this.msg);
-//   },
+    name: 'BeforeCreate',
+    setup() {
+        const msg = ref("hello");
+        console.log("Value of val is: " + msg.value);
+        return {
+            msg,
+        };
+    },
 };
+
 </script>

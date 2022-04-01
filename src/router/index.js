@@ -4,6 +4,7 @@ import Tugas1View from '../views/Tugas1/Tugas1View.vue'
 
 import Tugas2View from '../views/Tugas2/Tugas2View.vue'
 import BeforeCreateView from '../views/Tugas2/BeforeCreateView.vue'
+import AfterCreateView from '../views/Tugas2/AfterCreateView.vue'
 
 const routes = [
   {
@@ -31,8 +32,13 @@ const routes = [
   },
   {
     path: '/tugas/2/before-create',
-    name: 'before-create',
+    name: 'beforecreate',
     component: BeforeCreateView
+  },
+  {
+    path: '/tugas/2/after-create',
+    name: 'aftercreate',
+    component: AfterCreateView
   },
   
 ]

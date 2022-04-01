@@ -1,8 +1,8 @@
 <template>
   <div class="tugas">
-    <TugasDua 
-        msg="Tugas 2" 
-        />
+    <TugasDua>
+
+    </TugasDua>
   </div>
 </template>
 

@@ -29,18 +29,18 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
-subnav {
+#subnav {
   padding: 30px;
 }
 
-subnav a {
+#subnav a {
   font-size: 80%;
   font-weight: bold;
   color: #2c3e50;
   text-decoration: none;
 }
 
-subnav a.router-link-exact-active {
+#subnav a.router-link-exact-active {
   color: #42b983;
 }
 </style>

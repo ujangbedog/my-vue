@@ -1,8 +1,6 @@
 <template>
   <div class="tugas">
-    <BeforeCreate 
-        msg="Before Created" 
-        />
+    <BeforeCreate></BeforeCreate>
   </div>
 </template>
 
@@ -11,7 +9,7 @@
 import BeforeCreate from '@/components/Tugas2/BeforeCreate.vue'
 
 export default {
-  name: 'BeforeCreate',
+  name: 'BeforeCreateView',
   components: {
     BeforeCreate
   }
