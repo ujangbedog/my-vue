@@ -6,6 +6,7 @@ import Tugas2View from '../views/Tugas2/Tugas2View.vue'
 import SetupView from '../views/Tugas2/SetupView.vue'
 import BeforeMountView from '../views/Tugas2/BeforeMountView.vue'
 import OnMountedView from '../views/Tugas2/OnMountedView.vue'
+import BeforeUpdateAndUpdatedView from '../views/Tugas2/BeforeUpdateAndUpdatedView.vue'
 
 const routes = [
   {
@@ -45,6 +46,11 @@ const routes = [
     path: '/tugas/2/mounted',
     name: 'mounted',
     component: OnMountedView
+  },
+  {
+    path: '/tugas/2/update',
+    name: 'update',
+    component: BeforeUpdateAndUpdatedView
   },
 ]
 
