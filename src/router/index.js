@@ -7,6 +7,7 @@ import SetupView from '../views/Tugas2/SetupView.vue'
 import BeforeMountView from '../views/Tugas2/BeforeMountView.vue'
 import OnMountedView from '../views/Tugas2/OnMountedView.vue'
 import BeforeUpdateAndUpdatedView from '../views/Tugas2/BeforeUpdateAndUpdatedView.vue'
+import ActiveDeactiveView from '../views/Tugas2/ActiveDeactiveView.vue'
 
 const routes = [
   {
@@ -51,6 +52,11 @@ const routes = [
     path: '/tugas/2/update',
     name: 'update',
     component: BeforeUpdateAndUpdatedView
+  },
+  {
+    path: '/tugas/2/active-deactive',
+    name: 'active-deactive',
+    component: ActiveDeactiveView
   },
 ]
 
